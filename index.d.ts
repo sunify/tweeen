@@ -1,4 +1,4 @@
-declare module 'nano-tween' {
+declare module 'tweeen' {
   type TweenParams = {
     duration?: number;
     easing?: (time: number) => number;
@@ -12,5 +12,6 @@ declare module 'nano-tween' {
     cb: (value: number) => void,
     params?: TweenParams,
   );
-  module.exports = tween;
+
+  export = tween;
 }
