@@ -9,6 +9,7 @@ function tween(from, to, cb, params) {
   var duration = params.duration || 300;
   var easing = params.easing || linear;
   var fps = params.fps || 60;
+  var end = params.end;
 
   var stopped = false;
   var start = Date.now();
@@ -18,6 +19,9 @@ function tween(from, to, cb, params) {
     cb(from + (to - from) * easing(spent / duration));
     if (spent === duration || stopped) {
       stop();
+      if (typeof end === 'function') {
+        end();
+      }
     }
   }, fps);
 
