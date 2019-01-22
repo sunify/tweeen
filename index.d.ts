@@ -9,7 +9,7 @@ declare module 'nano-tween' {
     from: number,
     to: number,
     cb: (value: number) => void,
-    params: TweenParams,
+    params?: TweenParams,
   );
   module.exports = tween;
 }

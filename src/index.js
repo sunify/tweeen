@@ -5,6 +5,7 @@ function linear(a) {
 }
 
 function tween(from, to, cb, params) {
+  params = params || {};
   var duration = params.duration || 300;
   var easing = params.easing || linear;
   var fps = params.fps || 60;
