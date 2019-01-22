@@ -3,6 +3,7 @@ declare module 'nano-tween' {
     duration?: number;
     easing?: (time: number) => number;
     fps?: number;
+    end?: () => void;
   };
 
   function tween(

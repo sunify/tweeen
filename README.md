@@ -32,3 +32,4 @@ function tween(
 - `duration` — duration in ms, defaults to `300`
 - `easing` — simple easing function that takes one argument — time (from 0 to 1). Defaults to `linear`. You can use functions from [eases](https://www.npmjs.com/package/eases) or similar package
 - `fps` — defaults to `60`
+- `end` — animation end callback
