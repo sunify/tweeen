@@ -1,5 +1,5 @@
 declare module 'tweeen' {
-  type TweenParams = {
+  export type TweenParams = {
     duration?: number;
     easing?: (time: number) => number;
     fps?: number;
