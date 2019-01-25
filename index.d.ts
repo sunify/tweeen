@@ -6,12 +6,14 @@ declare module 'tweeen' {
     end?: () => void;
   };
 
+  export type Stop = () => void;
+
   function tween(
     from: number,
     to: number,
     cb: (value: number) => void,
     params?: TweenParams,
-  );
+  ): Stop;
 
   export default tween;
 }
