@@ -13,5 +13,5 @@ declare module 'tweeen' {
     params?: TweenParams,
   );
 
-  export = tween;
+  export default tween;
 }
