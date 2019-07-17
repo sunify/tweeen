@@ -5,7 +5,7 @@ Allows to «animate» number values with given duration
 ## Usage
 
 ```es6
-import tween from 'nano-tween';
+import tween from 'tweeen';
 
 const stop = tween(1, 100, (value) => {
   console.log(value);
