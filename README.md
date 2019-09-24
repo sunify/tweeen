@@ -19,6 +19,13 @@ const stop = tween(1, 100, (value) => {
 Signature of tween function
 
 ```ts
+type TweenParams {
+  duration?: number;
+  easing?: (t: number) => number;
+  fps?: number;
+  end?: Function;
+};
+
 function tween(
   from: number,
   to: number,
